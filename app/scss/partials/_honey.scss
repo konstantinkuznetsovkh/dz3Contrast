@@ -1,0 +1,83 @@
+.honey {
+  @include cf;
+  background: #e6f1fa;
+
+  .logo {
+    left: 120px;
+    position: absolute;
+    top: 92px;
+    z-index: 0;
+    @media#{$tablet} {
+      left: 0;
+      padding: 134px 0 0 36%;
+      position: relative;
+      top: 0;
+    }
+    @media #{$desktop-infinite} {
+      left: 82px;
+      top: 87px;
+    }
+
+    img {
+      height: 170px;
+    }
+    @media #{$mobile-small} {
+      left: 18%;
+      top: 30px;
+    }
+  }
+
+  .honey__text {
+    color: #000;
+    float: right;
+    font-family: "BrutalType-ExtraLight";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding: 29px 60px 29px 0;
+    width: 60%;
+    @media#{$tablet} {
+      float: none;
+      padding: 90px 0 52px;
+      width: 100%;
+    }
+    @media #{$mobile-big} {
+      font-family: "BrutalTypeLight";
+      padding: 380px 0 20px;
+      width: 100%;
+    }
+    @media #{$mobile-small} {
+      padding: 212px 0 20px;
+    }
+
+    li {
+      padding: 16px 0;
+
+      p {
+        @media #{$mobile-big} {
+          font-family: "BrutalTypeLight";
+          font-size: 18px;
+          letter-spacing: 0.1px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    ul {
+      padding: 17px 0;
+      @media #{$mobile-big} {
+        padding: 0;
+      }
+
+      li {
+        padding: 0 0 0 20px;
+
+        .fa {
+          color: #414f7e;
+          font-size: 9px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

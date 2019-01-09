@@ -1,0 +1,33 @@
+
+@font-face {
+    font-family: 'BrutalType-ExtraLight';
+    src: url('../fonts/BrutalType-ExtraLight.eot');
+    src: url('../fonts/BrutalType-ExtraLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrutalType-ExtraLight.woff') format('woff'),
+         url('../fonts/BrutalType-ExtraLight.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrutalTypeLight';
+    src: url('../fonts/BrutalTypeLight.eot');
+    src: url('../fonts/BrutalTypeLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrutalTypeLight.woff') format('woff'),
+         url('../fonts/BrutalTypeLight.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrutalTypeMedium';
+    src: url('../fonts/BrutalTypeMedium.eot');
+    src: url('../fonts/BrutalTypeMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrutalTypeMedium.woff') format('woff'),
+         url('../fonts/BrutalTypeMedium.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}

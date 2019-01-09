@@ -1,0 +1,693 @@
+header {
+  background: url(../img/header.png)no-repeat center;
+  background-color: rgba(56, 78, 129,.7);
+  height: 1080px;
+  width: 100%;
+  @media #{$tablet} {
+    height: 964px;
+  }
+  @media #{$desktop-infinite} {
+    height: 780px;
+  }
+  @media #{$mobile-big} {
+    background: url("../img/headerMob540.png") no-repeat -709px top;
+    height: 963px;
+  }
+  @media #{$mobile-small} {
+    background: url("../img/headerMob540.png") no-repeat -709px top;
+    height: 580px;
+  }
+
+  .back {
+    background: url(../img/table.png)no-repeat center;
+    display: none;
+    height: 963px;
+    position: absolute;
+    width: 100%;
+    @media #{$tablet} {
+      display: block;
+      height: 964px;
+    }
+    @media #{$mobile-big} {
+      background: url("../img/headerMob540Back.png") no-repeat center;
+      display: block;
+    }
+    @media #{$mobile-small} {
+      background: url("../img/headerMob540Back.png") no-repeat center;
+      display: block;
+      height: 580px;
+    }
+  }
+
+  .header__top {
+    height: 112px;
+    @media #{$desktop-infinite} {
+      height: 85px;
+    }
+
+    .logoTablet {
+      display: none;
+      @media #{$tablet} {
+        display: block;
+        left: 0;
+        position: absolute;
+        top: 31px;
+        height: 170px;
+        width: 207px;
+      }
+      @media #{$mobile-big} {
+        display: block;
+        left: 0;
+        height: 126px;
+        padding: 11px 0 0;
+        position: absolute;
+        top: 0;
+        width: 207px;
+      }
+      @media #{$mobile-small} {
+        display: block;
+        left: 0;
+        height: 126px;
+        position: absolute;
+        padding: 11px 0 0;
+        top: 0;
+        width: 207px;
+        z-index: 1;
+      }
+
+      img {
+        @media #{$mobile-big} {
+          height: 126px;
+        }
+        @media #{$mobile-small} {
+          height: 105px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .header__top_text {
+      float: right;
+      @include cf;
+      padding: 30px 48px 25px 34px;
+      @media #{$tablet} {
+        padding: 0;
+      }
+      @media #{$desktop-infinite} {
+        padding: 21px 48px 13px 34px;
+      }
+      @media #{$mobile-big} {
+        padding: 0 0 13px 34px;
+      }
+      @media #{$mobile-small} {
+        padding: 0 0 13px 34px;
+      }
+
+      a:nth-child(1) {
+        display: block;
+        color: #414f7e;
+        font-size: 24px;
+        font-family: 'BrutalTypeLight';
+        @media #{$tablet} {
+          display: none;
+        }
+        @media #{$mobile-big} {
+          display: none;
+        }
+        @media #{$mobile-small} {
+          display: none;
+        }
+      }
+
+      a:nth-child(2) {
+        display: block;
+        color: #414f7e;
+        font-size: 18px;
+        font-family: 'BrutalTypeLight';
+        letter-spacing: 0.5px;
+        @media #{$tablet} {
+          display: none;
+        }
+        @media #{$mobile-big} {
+          display: none;
+        }
+        @media #{$mobile-small} {
+          display: none;
+        }
+      }
+
+      .buttonTel {
+        background-color: #414f7e;
+        border-radius: 3px;
+        display: none;
+        color: #fff;
+        font-family: "BrutalType-ExtraLight";
+        font-size: 24px;
+        line-height: 70px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        width: 270px;
+
+        &:hover {
+          border: 1px solid #414f7e;
+          box-shadow: inset 0 0 50px #fff;
+          line-height: 68px;
+          transition: all 0.5s ease;
+          width: 268px;
+        }
+
+        img {
+          margin: 0 24px -11px 42px;
+          @media #{$mobile-small} {
+            margin: 5px 4px 4px 7px;
+          }
+        }
+        @media #{$tablet} {
+          display: block;
+        }
+        @media #{$mobile-big} {
+          display: block;
+        }
+        @media #{$mobile-small} {
+          display: none;
+        }
+      }
+
+      .small {
+        display: none;
+        @media #{$mobile-small} {
+          border-radius: 50%;
+          display: block;
+          height: 50px;
+          margin: 10px;
+          padding: 10px;
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .header__bottom {
+    @include cf;
+    background-color: rgba(255, 255, 255, 0.52);
+    overflow: visible;
+    @media #{$tablet} {
+      display: none;
+    }
+    @media #{$mobile-big} {
+      display: none;
+    }
+    @media #{$mobile-small} {
+      display: none;
+    }
+
+    a {
+      color: #414f7e;
+      font-size: 18px;
+      font-family: 'BrutalTypeLight';
+      padding: 16px 64px 17px 40px;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: #414f7e;
+        border-radius: 1px;
+        color: #fff;
+        transition: all 0.5s ease;
+      }
+      @media #{$desktop-infinite} {
+        padding: 16px 40px 17px;
+      }
+
+      .fa-angle-down {
+        font-size: 18px;
+        vertical-align: bottom;
+      }
+    }
+
+    nav {
+      display: inline-block;
+      padding-left: 184px;
+
+      li {
+        display: inline-block;
+        font-size: 1.1rem;
+        font-family: 'BrutalTypeLight';
+      }
+
+      li.menuDdm {
+        position: relative;
+
+        a {
+          display: inline-block;
+          padding: 16px 40px 17px;
+          transition: all 0.5s ease;
+        }
+
+        ul {
+          height: 0;
+          left: 0;
+          overflow: hidden;
+          opacity: 0;
+          min-width: 150px;
+          transition: all 0.5s linear;
+          position: absolute;
+          top: 55px;
+          z-index: 1;
+          @media#{$tablet} {}
+
+          li {
+            background: #414f7e;
+            display: block;
+            color: #fff;
+            font-family: "BrutalTypeLight";
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            padding: 16px 0;
+            position: relative;
+            text-align: center;
+            width: 154px;
+            z-index: 3;
+
+            a {
+              background: rgba(65, 79, 126,.1);
+              display: block;
+              height: 35%;
+              position: absolute;
+              top: 0;
+              transition: all 0.5s ease;
+              width: 47%;
+              z-index: 0;
+            }
+
+            &:hover {
+              background-color: rgba(255,255,255,.7);
+              border-radius: 1px;
+              box-shadow: unset;
+              color: #414f7e;
+              transition: all 0.5s ease;
+            }
+
+            a.anchor {
+              display: block;
+              height: 7%;
+              top: 0;
+              position: absolute;
+              width: 47%;
+              z-index: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .logo {
+      display: inline-block;
+      left: calc(50% - 122px);
+      position: absolute;
+      top: -80px;
+
+      a:hover {
+        background: unset;
+        box-shadow: unset;
+      }
+    }
+
+    .menu_right {
+      display: inline-block;
+      padding-left: 164px;
+      @media #{$desktop-infinite} {
+        padding-left: 204px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 16px 0;
+        font-size: 1.1rem;
+        font-family: Arial;
+      }
+    }
+  }
+
+  .headerTable {
+    display: none;
+    padding-top: 240px;
+    @media #{$tablet} {
+      display: block;
+    }
+    @media #{$mobile-big} {
+      display: block;
+      padding-top: 199px;
+    }
+    @media #{$mobile-small} {
+      display: block;
+      padding-top: 0;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        display: inline-block;
+        font-family: "BrutalTypeLight";
+        font-size: 18px;
+        letter-spacing: 0.1px;
+
+        a.center {
+          background: url(../img/telTablet.png)no-repeat center 13px;
+          @include buhe;
+          @media #{$mobile-big} {
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+          @media #{$mobile-small} {
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+        }
+
+        a.services {
+          background: url(../img/useTablet.png)no-repeat 57px 7px;
+          @include buhe;
+          @media #{$mobile-big} {
+            background: url(../img/useTablet.png)no-repeat center 7px;
+            background-color: #65a9df;
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+          @media #{$mobile-small} {
+            background: url(../img/useTablet.png)no-repeat center 7px;
+            background-color: #65a9df;
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+        }
+
+        a.team {
+          background: url(../img/teamTablet.png)no-repeat center 12px;
+          @include buhe;
+          @media #{$mobile-big} {
+            padding: 46px 0 12px;
+            width: 140px;
+          }
+          @media #{$mobile-small} {
+            padding: 46px 0 12px;
+            width: 140px;
+          }
+        }
+
+        a.contact {
+          background: url(../img/contactTablet.png)no-repeat center 17px;
+          @include buhe;
+          @media #{$mobile-big} {
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+          @media #{$mobile-small} {
+            padding: 46px 0 12px;
+            width: 108px;
+          }
+        }
+      }
+
+      li.menuDdm {
+        position: relative;
+
+        .fa-angle-up {
+          font-size: 18.35px;
+          padding-left: 15px;
+          vertical-align: bottom;
+        }
+
+        ul {
+          border-radius: 2px;
+          display: inline-block;
+          height: 0;
+          left: 0;
+          overflow: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s linear;
+          top: -165px;
+
+          li {
+            color: #fff;
+            font-family: "BrutalTypeLight";
+            font-size: 18px;
+            letter-spacing: 0.1px;
+            line-height: 56px;
+            text-align: center;
+            transition: all 0.5s ease;
+            width: 150px;
+            @media #{$mobile-big} {
+              width: 108px;
+            }
+            @media #{$mobile-small} {
+              width: 108px;
+            }
+
+            a {
+              background: rgba(65,79,126,.5);
+              color: #fff;
+              display: block;
+              @media #{$mobile-big} {}
+            }
+
+            &:hover {
+              background: rgba(255,255,255,.7);
+              border-radius: 1px;
+              color: #414f7e;
+              transition: all 0.5s ease;
+            }
+          }
+        }
+      }
+      @media #{$mobile-small} {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .first {
+    text-align: center;
+    vertical-align: middle;
+
+    .rumbs {
+      background: url(../img/rumbstop.png)no-repeat;
+      height: 1055px;
+      left: -434px;
+      position: absolute;
+      top: 273px;
+      width: 100%;
+      z-index: 0;
+      @media#{$tablet} {
+        left: -557px;
+        top: 212px;
+        width: 937px;
+      }
+      @media #{$desktop-infinite} {
+        left: -473px;
+        top: 0;
+        width: 937px;
+      }
+      @media #{$mobile-big} {
+        left: -653px;
+        top: 211px;
+        width: 937px;
+      }
+      @media #{$mobile-small} {
+        left: -653px;
+        top: -172px;
+        width: 937px;
+      }
+    }
+
+    .sociale {
+      float: right;
+      padding-right: 48px;
+      @media #{$tablet} {
+        padding-right: 0;
+      }
+      @media #{$mobile-big} {
+        margin: 0;
+        padding: 0;
+      }
+      @media #{$mobile-small} {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 2;
+      }
+
+      a:nth-child(1) {
+        background: url(../img/email.png)no-repeat;
+        border: none;
+        display: none;
+        height: 35px;
+        margin: 26px 0 24px 10px;
+        opacity: 0.71;
+        padding: 0;
+        width: 50px;
+        @media #{$tablet} {
+          display: block;
+          width: 52px;
+        }
+        @media #{$mobile-big} {
+          display: block;
+          margin: 0 0 48px;
+        }
+        @media #{$mobile-small} {
+          display: block;
+          margin: 0 0 38px;
+        }
+      }
+
+      a:nth-child(2) {
+        background: url(../img/fbTop.png)no-repeat;
+        display: block;
+        height: 31px;
+        margin: 26px 10px 24px;
+        opacity: 0.71;
+        padding: 0;
+        width: 30px;
+        @media #{$tablet} {
+          background: url(../img/instaTablet.png)no-repeat;
+          height: 52px;
+          margin: 45px 0 10px 10px;
+          width: 49px;
+        }
+        @media #{$mobile-big} {
+          background: url(../img/instaTablet.png)no-repeat;
+          height: 50px;
+          margin: 0 0 39px;
+          width: 50px;
+        }
+        @media #{$mobile-small} {
+          background: url(../img/instaTablet.png)no-repeat;
+          height: 50px;
+          margin: 0 0 29px;
+          width: 50px;
+        }
+      }
+
+      a:nth-child(3) {
+        background: url(../img/instaTop.png)no-repeat;
+        border: none;
+        display: block;
+        padding: 0;
+        margin: 10px;
+        opacity: 0.71;
+        height: 31px;
+        width: 30px;
+        @media #{$tablet} {
+          background: url(../img/fbTablet.png)no-repeat;
+          height: 52px;
+          margin: 49px 0 10px 10px;
+          opacity: 0.71;
+          width: 49px;
+        }
+        @media #{$mobile-big} {
+          background: url(../img/fbTablet.png)no-repeat;
+          height: 50px;
+          margin: 0;
+          width: 50px;
+        }
+        @media #{$mobile-small} {
+          background: url(../img/fbTablet.png)no-repeat;
+          height: 50px;
+          margin: 0;
+          width: 50px;
+        }
+      }
+    }
+
+    .first__text {
+      padding: 250px 0 90px;
+      text-align: center;
+      @media #{$desktop-infinite} {
+        padding: 215px 0 60px;
+      }
+      @media #{$tablet} {
+        padding: 285px 0 90px;
+      }
+      @media #{$mobile-big} {
+        padding: 233px 0 90px;
+      }
+      @media #{$mobile-small} {
+        padding: 79px 0 20px;
+      }
+
+      h2 {
+        color: #fff;
+        font-size: 90px;
+        font-family: 'BrutalTypeLight';
+        letter-spacing: 0.1px;
+        @media #{$tablet} {
+          font-size: 60px;
+          padding-bottom: 15px;
+        }
+        @media #{$desktop-infinite} {
+          font-size: 72px;
+        }
+        @media #{$mobile-big} {
+          font-size: 60px;
+          line-height: 60px;
+          padding-top: 20px;
+        }
+        @media #{$mobile-small} {
+          font-size: 40px;
+          line-height: 40px;
+          padding-top: 20px;
+        }
+      }
+
+      p {
+        color: #fff;
+        font-size: 36px;
+        font-family: 'BrutalTypeLight';
+        letter-spacing: 0.1px;
+        @media #{$tablet} {
+          font-size: 30px;
+        }
+        @media #{$desktop-infinite} {
+          font-size: 30px;
+        }
+        @media #{$mobile-big} {
+          font-size: 30px;
+          line-height: 30px;
+          padding-top: 22px;
+        }
+        @media #{$mobile-small} {
+          font-size: 24px;
+          line-height: 24px;
+          padding-top: 10px;
+        }
+
+        br {
+          display: none;
+          @media #{$mobile-big} {
+            display: block;
+          }
+          @media #{$mobile-small} {
+            display: block;
+          }
+        }
+      }
+    }
+
+    a.button {
+      @include buco;
+      @media #{$tablet} {
+        display: none;
+      }
+      @media #{$mobile-big} {
+        display: none;
+      }
+      @media #{$mobile-small} {
+        display: none;
+      }
+    }
+  }
+}
